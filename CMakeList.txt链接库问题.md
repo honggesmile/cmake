@@ -58,3 +58,17 @@ link_directories( ${Boost_LIBRARY_DIRS})
 target_link_libraries(kinect1 ${Boost_LIBRARIES})
 ~~~
 
+## realsense2
+
+~~~cmake
+# Find librealsense2 installed package
+find_package(realsense2 REQUIRED)
+
+# Enable C++11
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+
+# Link librealsense2 to the target
+target_link_libraries(${PROJECT_NAME} ${realsense2_LIBRARY})
+~~~
+
