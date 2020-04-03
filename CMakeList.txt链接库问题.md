@@ -45,6 +45,7 @@ target_link_libraries(realsense ${OpenCV_LIBS})
 ## eigen3
 
 ~~~cmake
+find_package(Eigen3 REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIR})
 ~~~
 
